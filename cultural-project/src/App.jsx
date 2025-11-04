@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ReactCountryFlag from "react-country-flag";
 import './App.css';
+import christmasImg from './assets/christmas.jpg';
+import friendsImg from './assets/friends.jpg';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -16,6 +18,10 @@ function App() {
             Hierarchy and respect versus directness and informalities. Obligation vs independence. I feel like my existence
             is split between two entirely different cultural worlds.
           </p>
+          <div className="photo-container">
+            <img src={christmasImg} alt="Christmas celebration" className="photo" />
+            <img src={friendsImg} alt="With friends" className="photo" />
+          </div>
           <div className="flag-container">
             <ReactCountryFlag countryCode="VN" svg className="flag vn-flag" style={{ fontSize: '4rem' }} />
             <div className="heart">❤️</div>

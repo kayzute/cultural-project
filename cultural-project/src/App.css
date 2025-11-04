@@ -141,6 +141,27 @@ body {
   margin-bottom: 3rem;
 }
 
+  .photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .photo {
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
 .flag-container {
   display: flex;
   justify-content: center;
@@ -314,7 +335,7 @@ body {
   .intro-text {
     font-size: 1.1rem;
   }
-  
+
   .flag-container {
     font-size: 3rem;
     gap: 1rem;
