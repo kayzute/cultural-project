@@ -6,7 +6,15 @@ import friendsImg from './assets/friends.jpg';
 import grandma from './assets/grandma.jpg';
 import pho from './assets/pho.jpg';
 import graduation from './assets/graduation.jpg';
-
+import fishing from './assets/fishing.jpg';
+import family from './assets/family.jpg';
+import canoe from './assets/canoe.jpg';
+import headshot from './assets/headshot.jpg';
+import culture from './assets/culture.jpg';
+import home from './assets/home.jpg';
+import me from './assets/me.jpg'
+import tet from './assets/tet.jpg'
+import basketball from './assets/basketball.jpg'
 
 
 function App() {
@@ -18,7 +26,7 @@ function App() {
 
   const sections = {
     home: {
-      title: 'tôi là hai thế giới.',
+      title: 'Tôi Là Hai Thế Giới',
       subtitle: 'I am two worlds.',
       content: (
         <div className="home-content">
@@ -81,21 +89,39 @@ function App() {
         <div className="american-content">
           <div className="experience-card">
             <h3>Between Two Worlds</h3>
-            <p>Speaking Vietnamese at home, English at school. Explaining why 
-            I take my shoes off indoors. Being "too American" for some, 
-            "too Vietnamese" for others, yet perfectly myself.</p>
+            <p>I spoke Vietnamese at home, English at school after my ESL classes I had to take in elementary. 
+              I was never allowed to go to sleep overs and I always took my shoes off indoors.
+              I had to go with my Mom to translate at all times because most places are English-only.
+              I had to live with microaggressions and face being the only Vietnamese kid in a PWI of 700 kids.
+              I had to assimilate and felt "too American" yet "too Vietnamese" for others, yet perfectly myself.
+              Despite having these conflicts, I am proud to say I am Vietnamese-American. </p>
+            <div className="photo-container">
+              <img src={fishing} alt="Me fishing" className="american-photo" />
+              <img src={headshot} alt="My headshot" className="american-photo" />
+
+            </div>
           </div>
           <div className="experience-card">
             <h3>Freedom & Opportunity</h3>
-            <p>The American dream my family chased. The freedom to be whoever 
-            I want to be, to honor my heritage while creating my own path. 
-            The promise that hard work opens doors.</p>
+            <p>The American dream my family chased is being realized. They came from Vietnam so I could have what they couldn't.
+              I'm able to live free and experience more than they were able to because of their sacrifice of leaving their family behind
+              and going to a place they hardly know. Now I can enjoy that freedom and honor their sacrifice for what they did for me and my brother.
+              I have obligations to fulfill because I'm Vietnamese, but I have dreams I want to chase because I'm American. Sometime's it's about finding the compromise.
+            </p>
+            <div className="photo-container">
+              <img src={family} alt="My family" className="american-photo" />
+              <img src={canoe} alt="Me canoeing" className="american-photo" />
+            </div>
           </div>
           <div className="experience-card">
             <h3>Building Bridges</h3>
-            <p>Sharing Vietnamese culture with American friends. Teaching 
-            people how to say my name correctly. Being a living bridge 
-            between East and West.</p>
+            <p>Sharing Vietnamese culture with American friends is one of my favorite things. Teaching them how to say 
+            Vietnamese words, how to cook some of our foods, or celebrate like we're at a two-year old's birthday party is all apart of the experience.
+            For me, it's like being the bridge between the East and the West. Even more so because culture is meant to be shared and I'm the perfect conduit.</p>
+            <div className="photo-container">
+              <img src={home} alt="My friends" className="american-photo" />
+              <img src={culture} alt="Vietnamese Wedding" className="american-photo" />
+            </div>
           </div>
         </div>
       )
@@ -108,34 +134,35 @@ function App() {
           <div className="identity-grid">
             <div className="identity-item">
               <span className="icon">🌸</span>
-              <p>I am the lotus flower that blooms in new soil</p>
+              <p>I am still growing, learning, and trying new experiences from both cultures</p>
             </div>
             <div className="identity-item">
               <span className="icon">📚</span>
-              <p>I carry stories written in two alphabets</p>
+              <p>I write, read, and speak in two languages</p>
             </div>
             <div className="identity-item">
               <span className="icon">🎵</span>
-              <p>I dance to both cải lương and hip-hop</p>
+              <p>I can sing and vibe cải lương and hip-hop. Karaoke runs in our veins</p>
             </div>
             <div className="identity-item">
-              <span className="icon">👨‍👩‍👧‍👦</span>
-              <p>I honor my ancestors while creating my own legacy</p>
-            </div>
-            <div className="identity-item">
-              <span className="icon">🌏</span>
-              <p>I am proof that home can be two places at once</p>
+              <span className="icon">🧵</span>
+              <p>I honor my ancestors and family while pursuing my own dreams</p>
             </div>
             <div className="identity-item">
               <span className="icon">✨</span>
-              <p>I am beautifully, completely, both</p>
+              <p>I am my own melting pot of identity and culture, and <strong><span style={{color:"purple"}}>I am unique</span></strong></p>
             </div>
           </div>
+            <div className="photo-container">
+              <img src={tet} alt="tet celebration" className="photo" />
+              <img src={me} alt="me" className="photo" />
+              <img src={basketball} alt="basketball with friends" className="photo" />
+
+            </div>
           <p className="identity-statement">
-            Being Vietnamese-American isn't about choosing between two cultures—
-            it's about celebrating the unique beauty of being both. I am the child 
-            of resilience, the bridge between generations, the living proof that 
-            identity is not either/or, but a rich and beautiful both/and.
+            Being Vietnamese-American isn't about choosing between two cultures.
+            It's about celebrating being both. It's truly a privilege to be someone
+            who can serve as a bridge between cultures and to be proud about both identities.
           </p>
         </div>
       )
