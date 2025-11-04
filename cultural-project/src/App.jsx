@@ -3,6 +3,7 @@ import ReactCountryFlag from "react-country-flag";
 import './App.css';
 import christmasImg from './assets/christmas.jpg';
 import friendsImg from './assets/friends.jpg';
+import grandma from './assets/grandma.jpg';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -40,10 +41,13 @@ function App() {
       content: (
         <div className="heritage-content">
           <div className="heritage-card">
-            <h3>Language & Words</h3>
-            <p>The melodic tones of Vietnamese connect me to my ancestors. 
-            "Con ơi" from my grandmother, the poetry of our six tones, 
-            and phrases that hold meanings English cannot capture.</p>
+            <h3>Language</h3>
+            <div className="photo-container">
+              <img src={grandma} alt="My grandmother" className="photo" />
+            </div>
+            <p>The melodic tones of Vietnamese connect me to my ancestors and my family. 
+            <strong>"Con ơi"</strong> or <strong>"thương"</strong> from my grandma are words that hold more meaning
+            and love than "love" itself.</p>
           </div>
           <div className="heritage-card">
             <h3>Food & Flavors</h3>
