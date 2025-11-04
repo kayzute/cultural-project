@@ -12,9 +12,9 @@ function App() {
       content: (
         <div className="home-content">
           <p className="intro-text">
-            Born between two cultures, I carry the warmth of Vietnamese traditions 
-            and the spirit of American dreams. My identity is woven from rice fields 
-            and city streets, from áo dài and blue jeans, from phở and pizza.
+            Born between two cultures, I am both Vietnamese and American. A clash between individualism and collectivism.
+            Hierarchy and respect versus directness and informalities. Obligation vs independence. I feel like my existence
+            is split between two entirely different cultural worlds.
           </p>
           <div className="flag-container">
             <ReactCountryFlag countryCode="VN" svg className="flag vn-flag" style={{ fontSize: '4rem' }} />
@@ -151,7 +151,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>Hành trình của tôi • My Journey</p>
+        <p>tôi là• i am</p>
       </footer>
     </div>
   );
