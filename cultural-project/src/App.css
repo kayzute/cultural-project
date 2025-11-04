@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -17,6 +22,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -209,10 +215,17 @@ body {
   }
 }
 
+/* .main-content {
+  flex: 1;
+  margin: 0;
+  padding: 2rem;
+  width: 100%;
+} */
+ 
 /* Heritage Section Styles */
 .heritage-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
 
@@ -240,11 +253,23 @@ body {
   line-height: 1.6;
 }
 
+/* .home-content {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+} */
+
 /* American Section Styles */
 .american-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
+  width: 100vw;
+  margin-left: calc(-1 * 2rem); /* counter parent padding */
+  padding: 3rem 2rem;
+  border-radius: 0; /* optional */
 }
 
 .experience-card {
@@ -252,7 +277,9 @@ body {
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #764ba2;
+  border-left: 10px solid #764ba2;
+  width: 100%;
+  max-width: none;
 }
 
 .experience-card h3 {
@@ -272,6 +299,10 @@ body {
   padding: 3rem;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  margin-left: calc(-1 * 2rem); /* counter parent padding */
+  padding: 3rem 2rem;
+  border-radius: 0; /* optional */
 }
 
 .identity-grid {
