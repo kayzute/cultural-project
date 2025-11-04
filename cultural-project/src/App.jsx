@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactCountryFlag from "react-country-flag";
 import './App.css';
 
 function App() {
@@ -6,8 +7,8 @@ function App() {
 
   const sections = {
     home: {
-      title: 'Cả Hai Thế Giới',
-      subtitle: 'Two Worlds, One Identity',
+      title: 'tôi là hai thế giới.',
+      subtitle: 'I am two worlds.',
       content: (
         <div className="home-content">
           <p className="intro-text">
@@ -16,9 +17,9 @@ function App() {
             and city streets, from áo dài and blue jeans, from phở and pizza.
           </p>
           <div className="flag-container">
-            <div className="flag vn-flag">🇻🇳</div>
+            <ReactCountryFlag countryCode="VN" svg className="flag vn-flag" style={{ fontSize: '4rem' }} />
             <div className="heart">❤️</div>
-            <div className="flag us-flag">🇺🇸</div>
+            <ReactCountryFlag countryCode="US" svg className="flag us-flag" style={{ fontSize: '4rem' }} />
           </div>
         </div>
       )
@@ -121,14 +122,9 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="header-overlay">
-          <h1 className="main-title" style={{color: 'white'}}>I AM</h1>
-          <h2 style={{color: 'white'}}>VIETNAMESE-AMERICAN</h2>
-            <h3 style={{
-              color: 'blue',
-              fontFamily: "'Bungee', sans-serif"
-            }}>
-              by Vincent Nguyen
-            </h3>
+          <h1 className="main-title" style={{color: 'white', fontFamily: "'Bungee', sans-serif"}}>I AM</h1>
+          <h2 style={{color: 'white', fontFamily: "'Bungee', sans-serif"}}>VIETNAMESE-AMERICAN</h2>
+            <h3 style={{color: 'blue', fontFamily: "'Bungee', sans-serif"}}>by Vincent Nguyen</h3>
         </div>
       </header>
 

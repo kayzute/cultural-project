@@ -21,7 +21,6 @@ body {
 
 /* Header Styles */
 .header {
-  /* Replace the path below with your image: url('./assets/your-image.jpg') */
   background-image: url('./assets/mt-back.jpg');
   background-size: cover;
   background-position: center 30%;
@@ -143,6 +142,7 @@ body {
 }
 
 .flag-container {
+  background: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
