@@ -21,13 +21,14 @@ body {
 
 /* Header Styles */
 .header {
-  background-image: url('https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200');
+  /* Replace the path below with your image: url('./assets/your-image.jpg') */
+  background-image: url('./assets/mt-back.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center 30%;
   background-repeat: no-repeat;
   padding: 3rem 2rem;
   position: relative;
-  min-height: 300px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;

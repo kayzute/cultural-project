@@ -121,8 +121,14 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="header-overlay">
-          <h1 className="main-title">I AM</h1>
-          <h2 style={{color: 'black'}}>VIETNAMESE-AMERICAN</h2>
+          <h1 className="main-title" style={{color: 'white'}}>I AM</h1>
+          <h2 style={{color: 'white'}}>VIETNAMESE-AMERICAN</h2>
+            <h3 style={{
+              color: 'blue',
+              fontFamily: "'Bungee', sans-serif"
+            }}>
+              by Vincent Nguyen
+            </h3>
         </div>
       </header>
 
