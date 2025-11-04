@@ -4,6 +4,10 @@ import './App.css';
 import christmasImg from './assets/christmas.jpg';
 import friendsImg from './assets/friends.jpg';
 import grandma from './assets/grandma.jpg';
+import pho from './assets/pho.jpg';
+import graduation from './assets/graduation.jpg';
+
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -41,25 +45,31 @@ function App() {
       content: (
         <div className="heritage-content">
           <div className="heritage-card">
-            <h3>Language</h3>
+            <h3>Language & Love</h3>
             <div className="photo-container">
-              <img src={grandma} alt="My grandmother" className="photo" />
+              <img src={grandma} alt="My grandma" className="photo" />
             </div>
             <p>The melodic tones of Vietnamese connect me to my ancestors and my family. 
             <strong>"Con ơi"</strong> or <strong>"thương"</strong> from my grandma are words that hold more meaning
-            and love than "love" itself.</p>
+            and love than "love" itself. Our elders' love is carried with us through these words.</p>
           </div>
           <div className="heritage-card">
             <h3>Food & Flavors</h3>
-            <p>Phở on Sunday mornings, bánh mì for lunch, the complexity of 
-            nước mắm. Every meal is a story, every recipe a memory passed down 
-            through generations.</p>
+            <div className="photo-container">
+              <img src={pho} alt="A bowl of pho" className="photo" />
+            </div>
+            <p><strong>Phở</strong> at 8am, <strong>bánh mì</strong> for lunch, or spring rolls and 
+            <strong> nước mắm</strong> with vegetables straight from the garden will always hit the spot. Vietnamese food is incomparable to other cultural cuisines.
+            My love for food stems from having access to the <strong>best food</strong>.</p>
           </div>
           <div className="heritage-card">
             <h3>Values & Traditions</h3>
-            <p>Respect for elders, the importance of family, hard work and 
-            education. Tết celebrations, ancestor worship, and the belief that 
-            we carry our family's honor in everything we do.</p>
+            <div className="photo-container">
+              <img src={graduation} alt="My graduation" className="photo" />
+            </div>
+            <p>The importance of family is given, but <strong>hard work</strong> and 
+            <strong> education </strong> is a priority that has been drilled into me since birth. Through our <strong>Tết celebrations</strong> and love for our ancestors 
+            we carry our family's honor and legacy in everything we do. That's why I'm obligated to give <strong>100%</strong>.</p>
           </div>
         </div>
       )
