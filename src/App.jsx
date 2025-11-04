@@ -106,7 +106,7 @@ function App() {
             <p>The American dream my family chased is being realized. They came from Vietnam so I could have what they couldn't.
               I'm able to live free and experience more than they were able to because of their sacrifice of leaving their family behind
               and going to a place they hardly know. Now I can enjoy that freedom and honor their sacrifice for what they did for me and my brother.
-              I have obligations to fulfill because I'm Vietnamese, but I have dreams I want to chase because I'm American. Sometime's it's about finding the compromise.
+              I have obligations to fulfill because I'm Vietnamese, but I have dreams I want to chase because I'm American. Sometimes it's about finding the compromise.
             </p>
             <div className="photo-container">
               <img src={family} alt="My family" className="american-photo" />
@@ -117,7 +117,7 @@ function App() {
             <h3>Building Bridges</h3>
             <p>Sharing Vietnamese culture with American friends is one of my favorite things. Teaching them how to say 
             Vietnamese words, how to cook some of our foods, or celebrate like we're at a two-year old's birthday party is all apart of the experience.
-            For me, it's like being the bridge between the East and the West. Even more so because culture is meant to be shared and I'm the perfect conduit.</p>
+            For me, it's like being the bridge between the East and the West. Even more so because culture is meant to be shared and I'm its conduit.</p>
             <div className="photo-container">
               <img src={home} alt="My friends" className="american-photo" />
               <img src={culture} alt="Vietnamese Wedding" className="american-photo" />
@@ -138,11 +138,11 @@ function App() {
             </div>
             <div className="identity-item">
               <span className="icon">📚</span>
-              <p>I write, read, and speak in two languages</p>
+              <p>I can read and speak in two languages</p>
             </div>
             <div className="identity-item">
               <span className="icon">🎵</span>
-              <p>I can sing and vibe cải lương and hip-hop. Karaoke runs in our veins</p>
+              <p>I can sing and vibe to cải lương and hip-hop. Karaoke runs in our veins</p>
             </div>
             <div className="identity-item">
               <span className="icon">🧵</span>
@@ -150,7 +150,7 @@ function App() {
             </div>
             <div className="identity-item">
               <span className="icon">✨</span>
-              <p>I am my own melting pot of identity and culture, and <strong><span style={{color:"purple"}}>I am unique</span></strong></p>
+              <p>I am my own melting pot of identity and culture, which makes me <strong><span style={{color:"purple"}}>unique</span></strong></p>
             </div>
           </div>
             <div className="photo-container">
