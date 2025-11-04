@@ -162,6 +162,10 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 
+  .clickable-photo {
+  cursor: pointer;
+}
+
 .flag-container {
   display: flex;
   justify-content: center;

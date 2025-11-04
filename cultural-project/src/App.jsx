@@ -7,6 +7,10 @@ import friendsImg from './assets/friends.jpg';
 function App() {
   const [activeSection, setActiveSection] = useState('home');
 
+  const handleImageClick = (section) => {
+    setActiveSection(section);
+  };
+
   const sections = {
     home: {
       title: 'tôi là hai thế giới.',
@@ -14,13 +18,13 @@ function App() {
       content: (
         <div className="home-content">
           <p className="intro-text">
-            Born between two cultures, I am both Vietnamese and American. A clash between individualism and collectivism.
-            Hierarchy and respect versus directness and informalities. Obligation vs independence. I feel like my existence
-            is split between two entirely different cultural worlds.
+            Born between two cultures, I am both <strong><span style={{color:"red"}}>Vietnamese</span></strong> and <strong><span style={{color:"blue"}}>American</span></strong>. A clash between <strong>individualism</strong> and <strong>collectivism</strong>,
+            <strong> hierarchy and respect</strong> vs <strong>directness and familiarity, and </strong> <strong>obligation</strong> vs <strong>independence</strong>. I feel like my existence
+            is split between <strong>two entirely different cultural worlds</strong>. But because I am of two worlds, <strong><span style={{color:"purple"}}>my existence is incredibly unique</span></strong>.
           </p>
           <div className="photo-container">
-            <img src={christmasImg} alt="Christmas celebration" className="photo" />
-            <img src={friendsImg} alt="With friends" className="photo" />
+            <img src={christmasImg} alt="Christmas celebration" className="photo" onClick={() => handleImageClick('heritage')} style={{cursor: 'pointer'}}/>
+            <img src={friendsImg} alt="With friends" className="photo" onClick={() => handleImageClick('american')} style={{cursor: 'pointer'}}/>
           </div>
           <div className="flag-container">
             <ReactCountryFlag countryCode="VN" svg className="flag vn-flag" style={{ fontSize: '4rem' }} />
@@ -32,7 +36,7 @@ function App() {
     },
     heritage: {
       title: 'Di Sản Việt Nam',
-      subtitle: 'Vietnamese Heritage',
+      subtitle: 'My Vietnamese Heritage',
       content: (
         <div className="heritage-content">
           <div className="heritage-card">
